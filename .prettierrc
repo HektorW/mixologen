@@ -2,8 +2,9 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "none",
+	"semi": false,
 	"printWidth": 100,
-	"plugins": ["prettier-plugin-svelte"],
+	"plugins": ["prettier-plugin-svelte", "@ianvs/prettier-plugin-sort-imports"],
 	"overrides": [
 		{
 			"files": "*.svelte",
@@ -11,5 +12,22 @@
 				"parser": "svelte"
 			}
 		}
-	]
+	],
+	"importOrder": [
+		"<TYPES>",
+		"<TYPES>^[.]",
+		"",
+		"<BUILTIN_MODULES>",
+		"",
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"^\\$env/(.*)$",
+		"",
+		"^\\$lib/(.*)$",
+		"",
+		"^[.]"
+	],
+	"importOrderParserPlugins": ["typescript", "jsx"],
+	"importOrderTypeScriptVersion": "5.0.0",
+	"importOrderCaseSensitive": false
 }

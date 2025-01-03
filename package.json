@@ -20,6 +20,8 @@
 	},
 	"devDependencies": {
 		"@chromatic-com/storybook": "^3.2.3",
+		"@ianvs/prettier-plugin-sort-imports": "^4.4.0",
+		"@iconify/svelte": "^4.1.0",
 		"@storybook/addon-essentials": "^8.4.7",
 		"@storybook/addon-interactions": "^8.4.7",
 		"@storybook/addon-svelte-csf": "^5.0.0-next.21",
@@ -40,7 +42,13 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@material/material-color-utilities": "^0.3.0",
+		"@vercel/blob": "^0.27.0",
+		"cloudinary": "^2.5.1",
 		"drizzle-orm": "^0.33.0",
-		"postgres": "^3.4.4"
+		"postgres": "^3.4.4",
+		"svelte-file-dropzone": "^2.0.9",
+		"sveltekit-superforms": "^2.22.1",
+		"zod": "^3.24.1"
 	}
 }
